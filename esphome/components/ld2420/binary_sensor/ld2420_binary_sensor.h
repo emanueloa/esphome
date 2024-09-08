@@ -16,6 +16,7 @@ class LD2420BinarySensor : public LD2420Listener, public Component, binary_senso
         this->presence_bsensor_->publish_state(presence);
     }
   }
+  bool state;
 
  protected:
   binary_sensor::BinarySensor *presence_bsensor_{nullptr};
